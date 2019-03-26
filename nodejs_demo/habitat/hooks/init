@@ -1,3 +1,4 @@
 #!/bin/sh
 
+rm {{pkg.path}}/app/public/stylesheets/style.css
 ln -vsf {{pkg.svc_config_path}}/style.css {{pkg.path}}/app/public/stylesheets/style.css  2>&1
