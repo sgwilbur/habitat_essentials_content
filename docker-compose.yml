@@ -1,13 +1,13 @@
 version: '3'
 services:
   nodejs_demo01:
-    image: myorigin/nodejs_demo
+    image: sgwilbur-20190325/nodejs_demo
     command: --group=qa
   nodejs_demo02:
-    image: myorigin/nodejs_demo
+    image: sgwilbur-20190325/nodejs_demo
     command: --group=qa --peer nodejs_demo01
   haproxy:
-    image: myorigin/haproxy_demo
+    image: sgwilbur-20190325/haproxy_demo
     command: --group=qa --bind backend:nodejs_demo.qa --peer nodejs_demo01
     ports:
       - 8085:8085
@@ -15,4 +15,3 @@ services:
       - 80:80
     environment:
       HAB_HAPROXY_DEMO: "[status]\nenabled = true"
-
