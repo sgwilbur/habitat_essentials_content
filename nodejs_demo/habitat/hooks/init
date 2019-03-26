@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -x "{{pkg.path}}/app/public/stylesheets/style.css" ]; then
-  rm {{pkg.path}}/app/public/stylesheets/style.css
-fi
-ln -vsf {{pkg.svc_config_path}}/style.css {{pkg.path}}/app/public/stylesheets/style.css  2>&1
+#if [ -x "{{pkg.path}}/app/public/stylesheets/style.css" ]; then
+#  rm {{pkg.path}}/app/public/stylesheets/style.css
+#fi
+cp {{pkg.svc_config_path}}/style.css {{pkg.path}}/app/public/stylesheets/style.css  2>&1
