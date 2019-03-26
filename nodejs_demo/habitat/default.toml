@@ -5,6 +5,5 @@
 [css]
 background_color = 'green'
 
-
 [app]
 port = 8000
