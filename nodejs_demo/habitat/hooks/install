@@ -1,3 +1,4 @@
 #!/bin/sh
 
 ln -svf {{pkg.svc_config_path}}/style.css {{pkg.path}}/app/public/stylesheets/style.css  2>&1
+ln -svf {{pkg.svc_config_path}}/node.json {{pkg.path}}/app/default_config.json
