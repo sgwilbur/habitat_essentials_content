@@ -1,6 +1,6 @@
 pkg_name=nodejs_demo
 pkg_origin=sgwilbur-20190325
-pkg_version="0.3.6"
+pkg_version="0.3.7"
 pkg_scaffolding="core/scaffolding-node"
 
 
