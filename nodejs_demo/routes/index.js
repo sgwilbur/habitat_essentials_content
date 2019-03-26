@@ -12,7 +12,8 @@ nconf.file({ file: nconf_file });
 router.get('/', function(req, res, next) {
   res.render('index', {
     title: nconf.get('message'),
-    title_tag: nconf.get('title_tag')
+    title_tag: nconf.get('title_tag'),
+    version: nconf.get('version')
   });
 });
 
