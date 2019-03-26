@@ -1,6 +1,6 @@
 pkg_name=nodejs_demo
 pkg_origin=sgwilbur-20190325
-pkg_version="0.3.16"
+pkg_version="0.3.17"
 pkg_scaffolding="core/scaffolding-node"
 
 pkg_svc_user=root
